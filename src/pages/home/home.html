@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title>
+      <ion-icon name="home"></ion-icon>
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+         <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button color="dark" block (click)="mostraAlerta()" icon-only>
+        <ion-icon name="person-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <button ion-button block outline (click)="paginaListaRetornoJSON()">API JSON</button>
+  <button ion-button block outline (click)="paginaListaObjetos()">Usuários</button>
+  <button ion-button block outline (click)="paginaListaFotos()">Fotos</button>
+  <button ion-button block outline (click)="paginaMostraFotos()">Fotos Randômicas</button>  
+</ion-content>
+  
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons end>
+      <button ion-button icon-end color="royal">
+          Send
+          <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+

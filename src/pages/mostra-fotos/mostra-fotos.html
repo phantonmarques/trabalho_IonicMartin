@@ -1,0 +1,31 @@
+<!--
+  Generated template for the MostraFotosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Fotos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-4>
+        <button ion-button outline (click)="imagemAnterior()">Anterior</button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button outline (click)="proximaFoto()">Próximo</button>
+      </ion-col>
+    </ion-row>
+    <ion-row align-self-center>
+      <ion-img width="200" height="300" src="{{ UrlImgRandom }}"></ion-img>
+    </ion-row>
+  </ion-grid>
+</ion-content>
